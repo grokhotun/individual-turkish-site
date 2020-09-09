@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="Описание">
+    <!-- Включить если нужна поддержка ie11 -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Спасибо за регистрацию</title>
+</head>
+
+<body class="lock">
+    <div class="preloader">
+        <div class="preloader__body">Прелоадер</div>
+    </div>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="s-header s-header--big">
+            <div class="s-header__bg ibg">
+                <img src="img/backgrounds/bg-4.png" alt="Флаг турции" />
+            </div>
+            <div class="container">
+                <div class="header">
+                    <div class="header__top">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="Лого" />
+                        </a>
+                        <div class="header__phone phone-item">
+                            <a href="tel:+7 (495) 255-30-20" class="phone-item__row">
+                                <span class="m-icon m-icon--phone"></span>
+                                <span class="m-icon m-icon--phone-2"></span>
+                                <span class="phone-item__number">+7 (495) 255-30-20</span>
+                            </a>
+                        </div>
+                        <div class="header__phone phone-item">
+                            <a href="tel:+7 (915) 359-95-19" class="phone-item__row">
+                                <span class="m-icon m-icon--whatsapp"></span>
+                                <span class="phone-item__number">+7 (915) 359-95-19</span>
+                            </a>
+                            <div class="phone-item__row">
+                                <span class="phone-item__note">(только для сообщений)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__bot">
+                        <div class="title-section">
+
+                            <span class="title-section__title ">Вы успешно зарегистрировались на вебинар!</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-worksheet">
+                <div class="container">
+                    <div class="worksheet">
+                        <div class="worksheet__header">
+                            <div class="title-section">
+                                <span class="title-section__title title-section__title--red">Анкета участника вебинара:</span>
+                                <p class="title-section__subtitle title-section__subtitle--black">Заполните анкету. Она позволит нам понять, какие участники будут на вебинаре и о чём нужно говорить в первую очередь. Анкета анонимная. Давайте, пожалуйста, правдивые ответы. Так мы сделаем вебинар максимально полезным именно для Вас.</p>
+                                <p class="title-section__subtitle title-section__subtitle--black title-section__subtitle--bold">Это займет меньше 1 (одной) минуты!</p>
+                            </div>
+                        </div>
+                        <div class="worksheet__body">
+                            <form class="form">
+                                <div class="worksheet-form">
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">1. Ваше имя</span>
+                                        <div class="worksheet-form__body">
+                                            <div class="form-group">
+                                                <input placeholder="Имя" required data-pristine-required-message="Введите ваше имя" type="text" class="form-group__input input-field">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">2. Сколько вам лет?</span>
+                                        <div class="worksheet-form__body">
+                                            <label for="p-1" class="radio ">
+                                                <input checked name="g-2" id="p-1" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">меньше 18 лет</span>
+                                            </label>
+                                            <label for="p-2" class="radio ">
+                                                <input name="g-2" id="p-2" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">18 - 25 лет</span>
+                                            </label>
+                                            <label for="p-3" class="radio ">
+                                                <input name="g-2" id="p-3" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">26 - 45 лет</span>
+                                            </label>
+                                            <label for="p-4" class="radio ">
+                                                <input name="g-2" id="p-4" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">45 - 60 лет</span>
+                                            </label>
+                                            <label for="p-5" class="radio ">
+                                                <input name="g-2" id="p-5" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">60+ лет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">3. Какая у вас цель занятий?</span>
+                                        <div class="worksheet-form__body">
+                                            <div class="form-group">
+                                                <textarea cols="20" rows="10" placeholder="Опишите своими словами" type="text" class="input-field input-field--textarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">4. Какой у вас уровень владения турецким? </span>
+                                        <div class="worksheet-form__body">
+                                            <label for="p-6" class="radio ">
+                                                <input checked name="g-3" id="p-6" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">нулевой (вообще ничего не знаю)</span>
+                                            </label>
+                                            <label for="p-7" class="radio ">
+                                                <input name="g-3" id="p-7" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">что-то знаю</span>
+                                            </label>
+                                            <label for="p-8" class="radio ">
+                                                <input name="g-3" id="p-8" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">начальный (А1)</span>
+                                            </label>
+                                            <label for="p-4" class="radio ">
+                                                <input name="g-3" id="p-4" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">базовый (А2)</span>
+                                            </label>
+                                            <label for="p-9" class="radio ">
+                                                <input name="g-3" id="p-9" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">средний (В1-В2)</span>
+                                            </label>
+                                            <label for="p-10" class="radio ">
+                                                <input name="g-3" id="p-10" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">продвинутый (С1)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">5. Как быстро вы хотите прокачать турецкий для вашей цели?</span>
+                                        <div class="worksheet-form__body">
+                                            <label for="p-11" class="radio ">
+                                                <input checked name="g-4" id="p-11" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">2-3 месяца</span>
+                                            </label>
+                                            <label for="p-12" class="radio ">
+                                                <input name="g-4" id="p-12" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">3-6 месяцев</span>
+                                            </label>
+                                            <label for="p-13" class="radio ">
+                                                <input name="g-4" id="p-13" type="radio">
+                                                <span class="radio__custom"></span>
+                                                <span class="radio__text">6-12 месяцев</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="worksheet-form__button">
+                                        <button type="submit" class="btn btn--primary">Отправить анкету</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close js-popup-close"></a>
+                <div class="popup__col popup__col--image">
+                    <img src="img/backgrounds/bg-3.png" alt="Флаг турции" />
+                </div>
+                <div class="popup__col popup__col--content">
+                    <span class="popup__title">Подача заявки</span>
+                    <span class="popup__note">Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время</span>
+                    <form action="" class="form">
+                        <div class="form-group">
+                            <span class="form-group__text">Ваше имя и фамилия</span>
+                            <input required data-pristine-required-message="Введите ваше имя" placeholder="Имя и фамилия" type="text" class="input-field form-group__input">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-group__text">Ваш телефон/whatsapp</span>
+                            <input required data-pristine-required-message="Введите ваш телефон" placeholder="Телефон/Whatsapp" type="text" class="input-field form-group__input js-only-digits js-mask-phone">
+                        </div>
+                        <div class="form-group">
+                            <span class="form-group__text">Ваш e-mail</span>
+                            <input required data-pristine-type="email" data-pristine-email-message="Email должен быть корректным" data-pristine-required-message="Введите ваш email" placeholder="Email" type="text" class="input-field form-group__input">
+                        </div>
+                        <button type="submit" class="btn btn--primary">Подать заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
