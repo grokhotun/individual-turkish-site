@@ -987,42 +987,6 @@ h6 {
   height: 50px;
 }
 
-.m-icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-}
-
-.m-icon--phone {
-  background: url("../img/icons/phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.m-icon--phone-2 {
-  width: 38px;
-  height: 38px;
-  background: url("../img/icons/phone-2.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.m-icon--whatsapp {
-  background: url("../img/icons/whatsapp.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.m-icon--check {
-  background: url("../img/icons/check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .btn {
   width: 100%;
   display: block;
@@ -1418,6 +1382,10 @@ h6 {
   font-size: 16px;
   line-height: 21px;
   color: #e6514a;
+}
+
+.benefits__title {
+  margin: 0px 0px 120px 0px;
 }
 
 .benefits__items {
@@ -1879,7 +1847,7 @@ h6 {
 }
 
 .result__title {
-  margin: 0px 0px 51px 0px;
+  margin: 0px 0px 120px 0px;
   text-align: center;
 }
 
@@ -2614,57 +2582,6 @@ h6 {
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
-
-  .result__col:nth-child(1) .benefit-block {
-    padding: 203px 0px 0px 0px;
-  }
-
-  .result__col:nth-child(2) .benefit-block {
-    padding: 153px 0 0 0;
-  }
-
-  .result__col:nth-child(3) .benefit-block {
-    padding: 43px 0 0 0;
-  }
-
-  .result__col:nth-child(4) .benefit-block {
-    padding: 63px 0 0 0;
-  }
-
-  .result__col:nth-child(5) .benefit-block {
-    padding: 113px 0 0 0;
-  }
-}
-
-@media (min-width: 1212px) {
-  .benefits__col:nth-child(1) .benefit-block {
-    padding: 203px 0 0 0;
-  }
-
-  .benefits__col:nth-child(2) .benefit-block {
-    position: relative;
-    padding: 153px 0 0 0;
-  }
-
-  .benefits__col:nth-child(3) .benefit-block {
-    position: relative;
-    padding: 43px 0 0 0;
-  }
-
-  .benefits__col:nth-child(4) .benefit-block {
-    position: relative;
-    padding: 63px 0 0 0;
-  }
-
-  .benefits__col:nth-child(5) .benefit-block {
-    position: relative;
-    padding: 113px 0 0 0;
-  }
-
-  .benefits__col:nth-child(6) .benefit-block {
-    position: relative;
-    padding: 0;
   }
 }
 
