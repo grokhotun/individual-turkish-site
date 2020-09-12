@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html')
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-mainpage">
+                <div class="mainpage">
+                    <div class="mainpage__content">
+                        <div class="container">
+                            <div class="mainpage__body">
+                                <span class="mainpage__note">Бесплатный урок!</span>
+                                @@include('./modules/title-section/title-section.html', {
+                                    "title":"Индивидуальный Турецкий онлайн",
+                                    "subtitle":"Хотите быстро прокачать язык для личной жизни, работы, учебы и ПМЖ в Турции? Занимайтесь онлайн с лучшими преподавателями и начните говорить на турецком с первых занятий."
+                                })
+                                <a href="#popup" class="mainpage__button btn btn--primary js-popup-open">
+                                    Записаться на пробный курс
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage__image">
+                        <img src="img/backgrounds/bg-1.png" alt="Фото ноутбука" />
+                    </div>
+                </div>
+            </div>
+            <div class="s-benefits">
+                <div class="s-benefits__bg-line ibg"><img src="img/benefits/line.svg" alt="Линия" /></div>
+                <div class="container">
+                    <div class="benefits">
+                        <div class="benefits__title">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Что входит в курс",
+                                "title":"Вы получаете",
+                                "black": true
+                            })
+                        </div>
+                        <div class="benefits__items">
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-1",
+                                    "text":"<span>Сертификат</span> по итогам обучения"
+                                })
+                            </div>
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-2",
+                                    "text":"Выбирайте <span>любое количество</span> уроков с преподавателем"
+                                })
+                            </div>
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-3",
+                                    "text":"<span>Грамматика “без воды”</span>, а только реально нужная информация для вас"
+                                })
+                            </div>
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-4",
+                                    "text":"<span>Индивидуальная программа</span> занятий под ваши задачи"
+                                })
+                            </div>
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-5",
+                                    "text":"<span>Постановка разговорной речи</span> от лучших преподавателей"
+                                })
+                            </div>
+                            <div class="benefits__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "benefit-6",
+                                    "text":"<span>Самая актуальная</span> и употребляемая <span>лексика</span>"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-for-whom">
+                <div class="for-whom">
+                    <div class="for-whom__header">
+                        <div class="container">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Для кого",
+                                "title":"Когда индивидуальные занятия для вас будут максимально полезны",
+                                "black": true
+                            })
+                        </div>
+                    </div>
+                    <div class="for-whom__body">
+                        <div class="slider-for-whom">
+                            <div class="slider-for-whom__container">
+                                <div class="slider-for-whom__wrapper swiper-wrapper">
+                                    <div class="slide-for-whom swiper-slide">
+                                        <div class="slide-for-whom__bg ibg">
+                                            <img src="img/numbers/1.png" alt="Фото цифры" />
+                                        </div>
+                                        <span class="slide-for-whom__title">У вас родственники в Турции</span>
+                                        <p class="slide-for-whom__text">
+                                            Вы собираетесь к родственникам в Турции. А может, у вас есть муж или жена в Турции, с которыми вам важно наладить общение и отношения.
+                                        </p>
+                                        <p class="slide-for-whom__text">
+                                            Возьмите индивидуальные онлайн уроки в нужном вам количестве, чтобы скорее научиться понимать, слышать собеседника и говорить о том, что волнует вас.
+                                        </p>
+                                    </div>
+                                    <div class="slide-for-whom  swiper-slide">
+                                        <div class="slide-for-whom__bg ibg">
+                                            <img src="img/numbers/2.png" alt="Фото цифры" />
+                                        </div>
+                                        <span class="slide-for-whom__title">
+                                            Вы обучаетесь, и вам нужно знание турецкого
+                                        </span>
+                                        <p class="slide-for-whom__text">
+                                            Бывает, что изучаешь турецкий на курсах в записи, а толку нет.
+                                        </p>
+                                        <p class="slide-for-whom__text">
+                                            Но если вы обучаетесь там, где необходим турецкий, то владение языком нужно вам как можно скорее
+                                        </p>
+                                        <p class="slide-for-whom__text">
+                                            “Подтяните” лексику по вашей теме, грамматику или разговорные навыки — в ускоренном темпе с преподавателем.
+                                        </p>
+                                    </div>
+                                    <div class="slide-for-whom  swiper-slide">
+                                        <div class="slide-for-whom__bg ibg">
+                                            <img src="img/numbers/3.png" alt="Фото цифры" />
+                                        </div>
+                                        <span class="slide-for-whom__title">Вы познакомились с другом/подругой из Турции</span>
+                                        <p class="slide-for-whom__text">И вы хотите, чтобы между вами скорее возникло взаимопонимание и приятное общение. </p>
+                                        <p class="slide-for-whom__text">Индивидуальные уроки помогут вам почувствовать себя уверенно, легко понимать вашего партнера, свободно выражать свои мысли и получать удовольствие от общения.</p>
+                                    </div>
+                                    <div class="slide-for-whom  swiper-slide">
+                                        <div class="slide-for-whom__bg ibg">
+                                            <img src="img/numbers/4.png" alt="Фото цифры" />
+                                        </div>
+                                        <span class="slide-for-whom__title">
+                                            Вы хотите получить хорошую работу или должность</span>
+                                        <p class="slide-for-whom__text">
+                                            В такой ситуации вам некогда изучать турецкий по удаленным курсам в записи. Ведь турецкий нужен вам “еще вчера”.
+                                        </p>
+                                        <p class="slide-for-whom__text">
+                                            Занятия с преподавателем помогут вам быстро подготовиться к работе в турецкой компании и получить лучшую позицию на работе.
+                                        </p>
+                                    </div>
+                                    <div class="slide-for-whom  swiper-slide">
+                                        <div class="slide-for-whom__bg ibg">
+                                            <img src="img/numbers/6.png" alt="Фото цифры" />
+                                        </div>
+                                        <span class="slide-for-whom__title">
+                                            Вы предпочитаете сразу обучаться эффективно и быстро
+                                        </span>
+                                        <p class="slide-for-whom__text">
+                                            Если вы из тех, кто не тратит время на курсы в записи и самостоятельное долгое обучение, тогда индивидуальные уроки — идеальное решение для вас.
+                                        </p>
+                                        <p class="slide-for-whom__text">
+                                            Благодаря занятиям с преподавателем, вы сможете в очень короткий период овладеть навыками говорения, грамматики, восприятия на слух.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="for-whom__footer">
+                        <div class="container js-drop-for-whom-footer">
+                            <div class="for-whom__buttons">
+                                <span class="for-whom__slider-btn for-whom__slider-btn--prev"></span>
+                                <a data-html-mover="js-drop-for-whom-footer, 1, 767" href="#popup" class="for-whom__button btn btn--primary js-popup-open">Записаться на пробный курс</a>
+                                <span class="for-whom__slider-btn for-whom__slider-btn--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-why-we">
+                <div class="container">
+                    <div class="why-we">
+                        <div class="why-we__row why-we__row--content">
+                            <div class="why-we__col why-we__col--image">
+                                <div class="why-we__image"><img src="img/flag.png" alt="Турецкий флаг" /></div>
+                            </div>
+                            <div class="why-we__col why-we__col--content">
+                                <div class="why-we__title">
+                                    @@include('./modules/title-section/title-section.html', {
+                                        "title":"Почему выгодно заниматься индивидуально с преподавателем у нас",
+                                        "mark":"Почему выгодно заниматься с нами",
+                                        "black":true
+                                    })
+                                </div>
+                                <ul class="why-we__list">
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Проверенные преподаватели",
+                                        "text":"Наши преподаватели умеют объяснять грамматику легко, покажут быстрые и эффективные приемы запоминания слов и фраз, научат, как заговорить на турецком уже на первом уроке."
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Проверенная методика обучения",
+                                        "text":"Дает гарантированный результат, проверенный более чем на 1000 учениках."
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"“Диалог” на рынке более 15 лет",
+                                        "text":"Обучаться с нами надежно и спокойно. И мы знаем, как обучить вас языку на нужный уровень в максимально короткие сроки."
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Проверка ДЗ в личном кабинете ",
+                                        "text":"Проверка ДЗ в личном кабинете "
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Индивидуальная программа занятий",
+                                        "text":"Подбирается под ваш запрос (деловой, бытовой турецкий и т.п.)"
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Любое количество занятий с преподавателем",
+                                        "text":"Выбирайте столько уроков, сколько вам нужно и не переплачивайте"
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Материалы по турецкому навсегда",
+                                        "text":"В личном кабинете у вас остаются все уроки по турецкому (грамматика, чтение, аудирование)"
+                                    })
+                                    @@include('./modules/why-we-item/why-we-item.html', {
+                                        "title":"Система скидок по количеству занятий",
+                                        "text":"Мы делаем обучение доступным для всех. Обучаться с нами комфортно."
+                                    })
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="why-we__row why-we__row--btn">
+                            <a href="#popup" class="why-we__button btn btn--primary js-popup-open">Записаться на пробный курс</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-levels">
+                <div class="s-levels__bg ibg">
+                    <img src="img/backgrounds/bg-2.png" alt="Фото турции" />
+                </div>
+                <div class="levels">
+                    <div class="levels__header">
+                        <div class="container">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"На наших индивидуальных занятиях вы можете прокачать любой уровень владения турецким языком*",
+                            })
+                        </div>
+                    </div>
+                    <div class="levels__body">
+                        <div class="slider-levels">
+                            <div class="slider-levels__container">
+                                <div class="slider-levels__wrapper swiper-wrapper">
+                                    <div class="slide-levels swiper-slide">
+                                        <div class="slide-levels__header">
+                                            <span>А1</span>
+                                            <span>начальный уровень</span>
+                                        </div>
+                                        <div class="slide-levels__body">
+                                            <span class="slide-levels__title">Ваши навыки:</span>
+                                            <p class="slide-levels__text">
+                                                По завершении уровня вы можете простыми предложениями рассказать о себе, о своей семье, друзьях, работе. Для вас проще простого описать, что вы любите и не любите делать. Вы умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000.
+                                            </p>
+                                        </div>
+                                        <div class="slide-levels__footer">
+                                            <a href="#" class="slide-levels__more">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-levels swiper-slide">
+                                        <div class="slide-levels__header">
+                                            <span>А1</span>
+                                            <span>начальный уровень</span>
+                                        </div>
+                                        <div class="slide-levels__body">
+                                            <span class="slide-levels__title">Ваши навыки:</span>
+                                            <p class="slide-levels__text">
+                                                По завершении уровня вы можете простыми предложениями рассказать о себе, о своей семье, друзьях, работе. Для вас проще простого описать, что вы любите и не любите делать. Вы умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000.
+                                            </p>
+                                        </div>
+                                        <div class="slide-levels__footer">
+                                            <a href="#" class="slide-levels__more">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-levels swiper-slide">
+                                        <div class="slide-levels__header">
+                                            <span>А1</span>
+                                            <span>начальный уровень</span>
+                                        </div>
+                                        <div class="slide-levels__body">
+                                            <span class="slide-levels__title">Ваши навыки:</span>
+                                            <p class="slide-levels__text">
+                                                По завершении уровня вы можете простыми предложениями рассказать о себе, о своей семье, друзьях, работе. Для вас проще простого описать, что вы любите и не любите делать. Вы умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000.
+                                            </p>
+                                        </div>
+                                        <div class="slide-levels__footer">
+                                            <a href="#" class="slide-levels__more">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-levels swiper-slide">
+                                        <div class="slide-levels__header">
+                                            <span>А1</span>
+                                            <span>начальный уровень</span>
+                                        </div>
+                                        <div class="slide-levels__body">
+                                            <span class="slide-levels__title">Ваши навыки:</span>
+                                            <p class="slide-levels__text">
+                                                По завершении уровня вы можете простыми предложениями рассказать о себе, о своей семье, друзьях, работе. Для вас проще простого описать, что вы любите и не любите делать. Вы умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000.
+                                            </p>
+                                        </div>
+                                        <div class="slide-levels__footer">
+                                            <a href="#" class="slide-levels__more">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                    <div class="slide-levels swiper-slide">
+                                        <div class="slide-levels__header">
+                                            <span>А1</span>
+                                            <span>начальный уровень</span>
+                                        </div>
+                                        <div class="slide-levels__body">
+                                            <span class="slide-levels__title">Ваши навыки:</span>
+                                            <p class="slide-levels__text">По завершении уровня вы можете простыми предложениями рассказать о себе, о своей семье, друзьях, работе. Для вас проще простого описать, что вы любите и не любите делать. Вы умеете спрашивать и отвечать который час, использовать цифры от 1 до 1 000.
+                                            </p>
+                                        </div>
+                                        <div class="slide-levels__footer">
+                                            <a href="#" class="slide-levels__more">Узнать больше</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="levels__footer">
+                        <div class="container js-drop-levels-footer">
+                            <div class="levels__buttons">
+                                <span class="levels__slider-btn levels__slider-btn--prev"></span>
+                                <span data-html-mover="js-drop-levels-footer, 1, 1000" class="levels__note">
+                                    *Если вы хотите прокачать любой из уровней турецкого и получить сертификат по итогам обучения, тогда вам необходимо 32 занятия с преподавателем индивидуально.
+                                </span>
+                                <span class="levels__slider-btn levels__slider-btn--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-result">
+                <div class="s-result-line ibg"><img src="img/benefits/line.svg" alt="Линия" /></div>
+                <div class="container">
+                    <div class="result">
+                        <div class="result__title">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"По итогам занятий",
+                                "title":"По итогам занятий вы заметите очень быстрый результат ",
+                                "black": true
+                            })
+                        </div>
+                        <div class="result__items">
+                            <div class="result__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "one",
+                                    "text":"Вы сможете говорить, писать, воспринимать турецкий на слух."
+                                })
+                            </div>
+                            <div class="result__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "two",
+                                    "text":"Вы преодолеете языковой барьер и будете чувствовать себя уверенно при общении на турецком."
+                                })
+                            </div>
+                            <div class="result__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "three",
+                                    "text":"Вы сможете устроиться на работу и легко общаться с родственниками, друзьями-турками."
+                                })
+                            </div>
+                            <div class="result__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "four",
+                                    "text":"Вы получите новые ощущения при посещении Турции — со знанием языка."
+                                })
+                            </div>
+                            <div class="result__col">
+                                @@include('./modules/benefit-block/benefit-block.html', {
+                                    "photo": "five",
+                                    "text":"Вы получите новые возможности в любой сфере жизни благодаря свободному владению турецким."
+                                })
+                            </div>
+                        </div>
+                        <div class="result__button">
+                            <a href="#popup" class="btn btn--primary js-popup-open">Записаться на пробный урок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-cost">
+                <div class="container">
+                    <div class="cost">
+                        <div class="cost__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Стоимость",
+                                "title":"Сколько это стоит",
+                                "black": true
+                            })
+                        </div>
+                        <div class="cost__body">
+                            <div class="cost__row">
+                                <span class="cost__title">Кол-во занятий (выберите):</span>
+                                <div class="cost__lessons">
+                                    @@include('./modules/radio/radio.html', {
+                                        "text":"1 - 7 занятий",
+                                        "id":"i-1",
+                                        "group":"g-1",
+                                        "rounded":true,
+                                        "checked": true
+                                    })
+                                    @@include('./modules/radio/radio.html', {
+                                        "text":"1 - 8 занятий",
+                                        "id":"i-2",
+                                        "group":"g-1",
+                                        "rounded":true
+                                    })
+                                    @@include('./modules/radio/radio.html', {
+                                        "text":"1 - 16 занятий",
+                                        "id":"i-3",
+                                        "group":"g-1",
+                                        "rounded":true
+                                    })
+                                    @@include('./modules/radio/radio.html', {
+                                        "text":"24 занятий",
+                                        "id":"i-4",
+                                        "group":"g-1",
+                                        "rounded":true
+                                    })
+                                    @@include('./modules/radio/radio.html', {
+                                        "text":"32 занятий",
+                                        "id":"i-5",
+                                        "group":"g-1",
+                                        "rounded":true
+                                    })
+                                </div>
+                            </div>
+                            <div class="cost__row">
+                                <div class="cost__text">
+                                    <p>Стоимость одного занятия <span class="cost__price">0000</span> руб.</p>
+                                    <p>Всего за <span class="cost__price">00</span> занятий <span class="cost__price">000000</span> руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost__footer">
+                            <a href="#popup" class="btn btn--primary js-popup-open">Записаться на пробный урок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-testimonials">
+                <div class="container">
+                    <div class="testimonials">
+                        <div class="testimonials__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Отзывы",
+                                "title":"Что говорят ученики, которые прошли обучение у нас",
+                                "black": true
+                            })
+                        </div>
+                        <div class="testimonials__body">
+                            <div class="slider-testimonials">
+                                <div class="slider-testimonials__container">
+                                    <div class="slider-testimonials__wrapper  swiper-wrapper">
+                                        <div class="slide-testimonials swiper-slide">
+                                            <div class="slide-testimonials__photo">
+                                                <img src="img/testimonials/1.jpg" alt="Аватарка студента" />
+                                            </div>
+                                            <span class="slide-testimonials__name">Oliver Long</span>
+                                            <p class="slide-testimonials__text">The organization of practical interaction, of course, enhances the collective product placement. The main stage of market research spins the media channel, using the experience of previous campaigns.</p>
+                                        </div>
+                                        <div class="slide-testimonials swiper-slide">
+                                            <div class="slide-testimonials__photo">
+                                                <img src="img/testimonials/2.jpg" alt="Аватарка студента" />
+                                            </div>
+                                            <span class="slide-testimonials__name">Julia Phillips</span>
+                                            <p class="slide-testimonials__text">Along with this, attracting an audience induces a daily media outlet. Reaching an audience significantly stabilizes the experimental survey, relying on insider information.</p>
+                                        </div>
+                                        <div class="slide-testimonials swiper-slide">
+                                            <div class="slide-testimonials__photo">
+                                                <img src="img/testimonials/3.jpg" alt="Аватарка студента" />
+                                            </div>
+                                            <span class="slide-testimonials__name">Anton Pecheritsa</span>
+                                            <p class="slide-testimonials__text">The psychology of perception of advertising, therefore, accelerates the product range. The exhibition booth concentrates the really social strategic market plan.</p>
+                                        </div>
+                                        <div class="slide-testimonials swiper-slide">
+                                            <div class="slide-testimonials__photo">
+                                                <img src="img/testimonials/1.jpg" alt="Аватарка студента" />
+                                            </div>
+                                            <span class="slide-testimonials__name">Lorem ipsum dolor sit amet.</span>
+                                            <p class="slide-testimonials__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptatibus consectetur velit sequi sed ipsa aliquam reprehenderit error. Dolores mollitia reprehenderit, repellat error deserunt, sunt, culpa quasi deleniti impedit explicabo nemo. Quam ratione, obcaecati odit quod sint laboriosam in, alias ea facilis ipsum inventore voluptas consequuntur similique tempore voluptatibus ducimus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-testimonials__pagination"></div>
+                            </div>
+                        </div>
+                        <div class="testimonials__footer">
+                            <a href="#popup" class="btn btn--primary js-popup-open">Хочу также</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-how-to-start">
+                <div class="container">
+                    <div class="how-to-start">
+                        <div class="how-to-start__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Как начать?",
+                                "title":"Как начать заниматься индивидуально с преподавателем школы “Диалог”",
+                            })
+                        </div>
+                        <div class="how-to-start__body">
+                            <ul class="how-to-start__list">
+                                <li class="how-to-start__item">
+                                    <span>1.</span>
+                                    <p class="how-to-start__text">Оставьте заявку на сайте.</p>
+                                </li>
+                                <li class="how-to-start__item">
+                                    <span>2.</span>
+                                    <p class="how-to-start__text">Мы назначаем пробный бесплатный урок..</p>
+                                </li>
+                                <li class="how-to-start__item">
+                                    <span>3.</span>
+                                    <p class="how-to-start__text">По итогам первого пробного занятия подбираем преподавателя под ваши запросы.</p>
+                                </li>
+                                <li class="how-to-start__item">
+                                    <span>4.</span>
+                                    <p class="how-to-start__text">Приступите к урокам с преподавателем.</p>
+                                </li>
+                                <li class="how-to-start__item">
+                                    <span>5.</span>
+                                    <p class="how-to-start__text">Оцените свой результат уже после первых уроков. </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-teachers">
+                <div class="container">
+                    <div class="teachers">
+                        <div class="teachers__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "mark":"Преподаватели",
+                                "title":"Наши преподаватели турецкого языка",
+                                "black":true
+                            })
+                        </div>
+                        <div class="teachers__body">
+                            <div class="slider-teachers">
+                                <div class="slider-teachers__container">
+                                    <div class="slider-teachers__wrapper swiper-wrapper">
+                                        <div class="slide-teachers swiper-slide">
+                                            <div class="slide-teachers__photo">
+                                                <div class="slide-teachers__image">
+                                                    <img src="img/testimonials/5.png" alt="Фото учителя" />
+                                                </div>
+                                            </div>
+                                            <span class="slide-teachers__name">Анастасия Ханым</span>
+                                            <div class="slide-teachers__text">
+                                                <p>Merhaba. Меня зовут Анастасия. Я преподаю турецкий язык уже 6 лет, 5 из них в Онлайн школе "Диалог".</p>
+                                                <p>Преподавание для меня это не просто работа, это любимое дело, которому я посвящаю достаточно много времени. Всегда стараюсь найти подход ученику. У каждого свой путь изучения языка и индивидуальный подход это то, что необходимо для достижения хорошего результата.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="slider-teachers__btn slider-teachers__btn--prev"></span>
+                                <span class="slider-teachers__btn slider-teachers__btn--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./template/scripts.html')
+</body>
+
+</html>

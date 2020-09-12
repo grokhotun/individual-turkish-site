@@ -1,0 +1,32 @@
+.footer {
+    // .footer__header
+    &__header {
+        text-align: center;
+        margin: 0px 0px 52px 0px;
+    }
+    // .footer__text
+    &__text {
+        display: inline-block;
+        font-weight: bold;
+        @include responsiveFont(32, 22, 1);
+        line-height: 130%;
+        color: #FFFFFF;
+    }
+    // .footer__body
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > * {
+          &:not(:last-child) { 
+                margin: 0px 30px 0px 0px;
+                @media (max-width:$maxwidth3){
+                    margin: 0px 0px 15px 0px;
+                } 
+            }
+        }
+        @media (max-width:$maxwidth3){
+            flex-direction: column;
+        }
+    }
+}

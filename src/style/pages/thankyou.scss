@@ -1,0 +1,52 @@
+.worksheet {
+    padding: 60px 0;
+    max-width: 770px;
+    margin: 0 auto;
+    // .worksheet__header
+    &__header {
+        text-align: center;
+        margin: 0px 0px 52px 0px;
+    }
+
+    // .worksheet__body
+
+    &__body {
+        margin: 0px 0px 60px 0px;
+    }
+
+}
+
+.worksheet-form {
+    & > * {
+        &:not(:last-child) { margin: 0px 0px 28px 0px; }
+    }
+    // .worksheet-form__item
+    &__item {
+    }
+
+    // .worksheet-form__title
+
+    &__title {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: #23283B;
+        margin: 0px 0px 24px 0px;
+    }
+
+    // .worksheet-form__body
+    &__body {
+        @media (min-width:$maxwidth3){
+            padding: 0px 0px 0px 27px;
+        }
+        & > * {
+          &:not(:last-child) { margin: 0px 0px 12px 0px; }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+}

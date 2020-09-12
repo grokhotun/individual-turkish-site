@@ -1,0 +1,38 @@
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
+    width: 100%;
+    display: block;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 16px 58px;
+    transition: .3s ease;
+    border-radius: 30px;
+    max-width: 372px;
+    &--primary {
+        color: #FFFFFF;
+        background: #E6514A;
+        &:hover{
+            background: darken($color: #E6514A, $amount: 15%);
+        }
+    }
+
+    &--secondary {
+        color: #3035C4;
+        background: #ffffff;
+        &:hover{
+            background: darken($color: #ffffff, $amount: 15%);
+        }
+    }
+}

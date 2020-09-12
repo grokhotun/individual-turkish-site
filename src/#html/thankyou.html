@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Спасибо за регистрацию",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body class="lock">
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="s-header s-header--big">
+            <div class="s-header__bg ibg">
+                <img src="img/backgrounds/bg-4.png" alt="Флаг турции" />
+            </div>
+            <div class="container">
+                <div class="header">
+                    <div class="header__top">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/logo.svg" alt="Лого" />
+                        </a>
+                        <div class="header__phone phone-item">
+                            <a href="tel:+7 (495) 255-30-20" class="phone-item__row">
+                                @@include('./mixins/svg-icon.html', {"name":"phone", "mod":""})
+                                @@include('./mixins/svg-icon.html', {"name":"phone-2", "mod":""})
+                                <span class="phone-item__number">+7 (495) 255-30-20</span>
+                            </a>
+                        </div>
+                        <div class="header__phone phone-item">
+                            <a href="tel:+7 (915) 359-95-19" class="phone-item__row">
+                                @@include('./mixins/svg-icon.html', {"name":"whatsapp", "mod":""})
+                                <span class="phone-item__number">+7 (915) 359-95-19</span>
+                            </a>
+                            <div class="phone-item__row">
+                                <span class="phone-item__note">(только для сообщений)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__bot">
+                        @@include('./modules/title-section/title-section.html', {
+                            "title":"Вы успешно зарегистрировались на вебинар!"
+                        })
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-worksheet">
+                <div class="container">
+                    <div class="worksheet">
+                        <div class="worksheet__header">
+                            <div class="title-section">
+                                <span class="title-section__title title-section__title--red">Анкета участника вебинара:</span>
+                                <p class="title-section__subtitle title-section__subtitle--black">Заполните анкету. Она позволит нам понять, какие участники будут на вебинаре и о чём нужно говорить в первую очередь. Анкета анонимная. Давайте, пожалуйста, правдивые ответы. Так мы сделаем вебинар максимально полезным именно для Вас.</p>
+                                <p class="title-section__subtitle title-section__subtitle--black title-section__subtitle--bold">Это займет меньше 1 (одной) минуты!</p>
+                            </div>
+                        </div>
+                        <div class="worksheet__body">
+                            <form class="form">
+                                <div class="worksheet-form">
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">1. Ваше имя</span>
+                                        <div class="worksheet-form__body">
+                                            <div class="form-group">
+                                                <input 
+                                                    placeholder="Имя"
+                                                    required
+                                                    data-pristine-required-message="Введите ваше имя"
+                                                    type="text" class="form-group__input input-field">
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">2. Сколько вам лет?</span>
+                                        <div class="worksheet-form__body">
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"меньше 18 лет",
+                                                "id":"p-1",
+                                                "group":"g-2",
+                                                "checked": true
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"18 - 25 лет",
+                                                "id":"p-2",
+                                                "group":"g-2"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"26 - 45 лет",
+                                                "id":"p-3",
+                                                "group":"g-2"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"45 - 60 лет",
+                                                "id":"p-4",
+                                                "group":"g-2"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"60+ лет",
+                                                "id":"p-5",
+                                                "group":"g-2"
+                                            })
+                                        </div>
+                                    </div>   
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">3. Какая у вас цель занятий?</span>
+                                        <div class="worksheet-form__body">
+                                            <div class="form-group">
+                                                <textarea  cols="20" rows="10" placeholder="Опишите своими словами" type="text" class="input-field input-field--textarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">4. Какой у вас уровень владения турецким? </span>
+                                        <div class="worksheet-form__body">
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"нулевой (вообще ничего не знаю)",
+                                                "id":"p-6",
+                                                "group":"g-3",
+                                                "checked": true
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"что-то знаю",
+                                                "id":"p-7",
+                                                "group":"g-3"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"начальный (А1)",
+                                                "id":"p-8",
+                                                "group":"g-3"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"базовый (А2)",
+                                                "id":"p-4",
+                                                "group":"g-3"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"средний (В1-В2)",
+                                                "id":"p-9",
+                                                "group":"g-3"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"продвинутый (С1)",
+                                                "id":"p-10",
+                                                "group":"g-3"
+                                            })
+                                        </div>
+                                    </div>   
+                                    <div class="worksheet-form__item">
+                                        <span class="worksheet-form__title">5. Как быстро вы хотите прокачать турецкий для вашей цели?</span>
+                                        <div class="worksheet-form__body">
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"2-3 месяца",
+                                                "id":"p-11",
+                                                "group":"g-4",
+                                                "checked": true
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"3-6 месяцев",
+                                                "id":"p-12",
+                                                "group":"g-4"
+                                            })
+                                            @@include('./modules/radio/radio.html', {
+                                                "text":"6-12 месяцев",
+                                                "id":"p-13",
+                                                "group":"g-4"
+                                            })
+                                        </div>
+                                    </div>  
+                                    <div class="worksheet-form__button">
+                                        <button type="submit" class="btn btn--primary">Отправить анкету</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('./modules/popups/popup-call-request.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

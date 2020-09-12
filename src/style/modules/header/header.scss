@@ -1,0 +1,94 @@
+.header {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    &__bot {
+        padding: 30px 0 80px 0;
+        .title-section {
+            max-width: 770px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    // .header__logo
+    &__logo {
+        flex: 1;
+        display: inline-block;
+        width: 140px;
+        height: 40px;
+    }
+
+    // .header__phone
+
+    &__phone {
+        margin: 0px 53px 0px 0px;
+        @media (max-width:$maxwidth3){
+            margin: 0px 28px 0px 0px;
+        }
+        &:last-child{
+            margin: 0;
+        }
+    }
+}
+
+.phone-item {
+    // .phone-item__row
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon {
+            margin: 0px 10px 0px 0px;
+        }
+
+        @media (max-width:$maxwidth3){
+            .icon-phone {
+                display: none;
+            }
+        }
+        @media (max-width:$maxwidth3){
+            .icon-phone-2, 
+            .icon-whatsapp {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        @media (min-width:$maxwidth3){
+            .icon-phone-2 {
+                display: none;
+            }
+        }
+    }
+
+    // .phone-item__number
+
+    &__number {
+        display: none;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+        @media (min-width:$maxwidth3){
+            display: block;
+        }
+    }
+
+    // .phone-item__note
+
+    &__note {
+        display: none;
+        font-size: 9px;
+        line-height: 11px;
+        color: #FFFFFF;
+        @media (min-width:$maxwidth3){
+            display: block;
+        }
+    }
+}

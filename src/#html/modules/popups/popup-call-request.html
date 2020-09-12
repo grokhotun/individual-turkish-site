@@ -1,0 +1,40 @@
+<div id="popup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">    
+            <a href="#" class="popup__close js-popup-close"></a>
+            <div class="popup__col popup__col--image">
+                <img src="img/backgrounds/bg-3.png" alt="Флаг турции" />
+            </div>
+            <div class="popup__col popup__col--content">
+                <span class="popup__title">Подача заявки</span>
+                <span class="popup__note">Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время</span>
+                <form action="" class="form">
+                    <div class="form-group">
+                        <span class="form-group__text">Ваше имя и фамилия</span>
+                        <input 
+                            required 
+                            data-pristine-required-message="Введите ваше имя"
+                            placeholder="Имя и фамилия" type="text" class="input-field form-group__input">
+                    </div>
+                    <div class="form-group">
+                        <span class="form-group__text">Ваш телефон/whatsapp</span>
+                        <input 
+                            required 
+                            data-pristine-required-message="Введите ваш телефон"
+                            placeholder="Телефон/Whatsapp" type="text" class="input-field form-group__input js-only-digits js-mask-phone">
+                    </div>
+                    <div class="form-group">
+                        <span class="form-group__text">Ваш e-mail</span>
+                        <input 
+                            required 
+                            data-pristine-type="email"
+                            data-pristine-email-message="Email должен быть корректным"
+                            data-pristine-required-message="Введите ваш email"
+                            placeholder="Email" type="text" class="input-field form-group__input">
+                    </div>
+                    <button type="submit" class="btn btn--primary">Подать заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
